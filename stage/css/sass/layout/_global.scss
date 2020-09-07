@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+.content-area {
+    min-height: 100%;
+    width: calc(100% - 250px);
+    transition: 0.25s;
+    will-change: width;
+    float: right;
+}
+
+.page {
+    min-height: 100vh;
+}
