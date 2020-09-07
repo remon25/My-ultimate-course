@@ -7,8 +7,13 @@ html(lang="en")
         include pug\layout\styles
     body
      .page.homepage
-     include pug\layout\sidebar
-     .content-area 
+        include pug\layout\sidebar
+        .content-area 
+         .header
+           i.fas.fa-exchange-alt.Toggle
+         .content
+          h1 HOME page
+     include pug\scripts\scripts
      
 
      script(src="http://localhost:35729/livereload.js")

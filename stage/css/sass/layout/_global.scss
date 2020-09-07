@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .content-area {
@@ -8,6 +10,9 @@
     transition: 0.25s;
     will-change: width;
     float: right;
+    &.no-sidebar {
+        width: 100%;
+    }
 }
 
 .page {
