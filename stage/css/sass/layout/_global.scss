@@ -5,11 +5,12 @@
 }
 
 .content-area {
-    min-height: 100%;
+    min-height: 100vh;
     width: calc(100% - 250px);
     transition: 0.25s;
     will-change: width;
     float: right;
+    background-color: #e7e8ea;
     &.no-sidebar {
         width: 100%;
     }
