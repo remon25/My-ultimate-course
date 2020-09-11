@@ -11,6 +11,76 @@
     &.no-sidebar {
         left: -250px;
     }
+    .logo-area {
+        font-weight: bold;
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .links-area {
+        li {
+            a {
+                color: #ccc;
+                padding: 10px 20px;
+                display: block;
+                position: relative;
+                transition: 0.25s;
+                &:hover {
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+        }
+        >li>a {
+            position: relative;
+            color: #fff;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                border: 2px solid #fff;
+                transform: translateY(-50%)
+            }
+            &:hover {
+                padding-left: 30px;
+            }
+        }
+        .child-links {
+            position: relative;
+            display: none;
+            &::before {
+                content: "";
+                width: 3px;
+                height: 91%;
+                background-color: #666;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            a {
+                position: relative;
+                transition: 1.25s;
+                &:hover::before {
+                    content: "";
+                    width: 3px;
+                    height: 34px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: 0;
+                    top: 1px;
+                }
+            }
+        }
+        .toggle-menu {
+            float: right;
+            position: relative;
+            top: 4px;
+            transition: 0.33s all ease-in-out;
+        }
+    }
 }
 
 .Toggle {

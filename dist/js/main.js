@@ -7,5 +7,11 @@ $(function() {
 
     });
 
+    $(".slide").click(function() {
+
+        $(this).find('i').toggleClass("fa-angle-right fa-angle-down")
+        $(this).next('ul').slideToggle(300)
+    })
+
 
 });
